@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "Thelamonblack400";
+  src: url("./assets/fonts/Thelamonblack400.otf");
+}
+
+@font-face {
+  font-family: "avenir-roman";
+  src: url("./assets/fonts/avenir-roman.ttf");
+}
+@font-face {
+  font-family: "avenir-heavy";
+  src: url("./assets/fonts/AvenirHeavy.ttf");
+}
+@font-face {
+  font-family: "avenir-light";
+  src: url("./assets/fonts/AvenirLight.ttf");
+}
+
+/* front section  */
+.container {
+  display: flex;
+  height: 100vh; /* Ensures the container takes up the full viewport height */
+  align-items: center;
+  justify-content: center;
+}
+.shitcont {
+  text-align: center;
+}
+.heading {
+  color: black;
+  font-size: 5rem;
+  font-family: "Thelamonblack400", sans-serif;
+}
+
+.desc {
+  color: black;
+  font-size: 2.5em;
+  font-weight: 100;
+  font-family: "avenir-roman", sans-serif;
+  margin-top: -10px;
+}
+
+/* second about  */
+.abouttext {
+  display: flex;
+  height: 100vh; /* Ensures the container takes up the full viewport height */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.behindAnimatedText {
+  font-family: "avenir-heavy";
+  font-size: 10rem;
+  color: rgba(238, 238, 238);
+  width: 80%;
+  position: absolute;
+  top: 20%;
+  left: -20%;
+  transform: translateY(-50%); /* Center text vertically */
+  transition: transform 0.5s ease-out;
+  z-index: -1;
+}
+.longdesc {
+  font-family: "avenir-light";
+  font-size: 3em;
+  width: 80%;
+}
+/* Projects Section */
+.projects {
+  display: flex;
+  height: 100vh; /* Ensures the container takes up the full viewport height */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  height: 50vh;
+  width: 50vw;
+  border-color: black;
+  border-width: 2px;
+}
+.right {
+  height: 50vh;
+  width: 50vw;
+}
+
+.svgbig {
+  height: 80vh;
+}
+.svgsmall {
+  height: 50vh;
+}
+
+/* skills section */
+
+.skillstext {
+  display: flex;
+  height: 100vh; /* Ensures the container takes up the full viewport height */
+  align-items: center;
+  justify-content: center;
+}
+
+.skillsbehindAnimatedText {
+  font-family: "avenir-heavy";
+  font-size: 12rem;
+  color: rgba(238, 238, 238);
+  width: 80%;
+  position: relative;
+  top: 0%;
+  right: -150%;
+  transform: translateY(-50%); /* Adjusted to match the 'ABOUT ME' section */
+  transition: transform 0.5s ease-out;
+  z-index: -1;
+}
+
+.skillcont {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillscontainerleft {
+  font-size: 2rem;
+  font-family: avenir-roman;
+  width: 30vw;
+  height: 50vh;
+}
+.skillscontainerright {
+  font-size: 2rem;
+  font-family: avenir-roman;
+  width: 70vw;
+  height: 50vh;
+}
+
+/* Contact Section */
+
+.contactcont {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.images {
+  display: flex; /* Makes the container a flexbox */
+  justify-content: space-around; /* Distributes space evenly around the images */
+  align-items: center; /* Centers the images vertically */
+  width: 60%; /* Adjusts the width to control spacing */
+  margin-top: 20px;
+}
+
+.images img {
+  width: 100px;
+}
+
+.contactbehindAnimatedText {
+  font-family: "avenir-heavy";
+  font-size: 10rem;
+  color: rgba(238, 238, 238);
+  width: 20%;
+  position: relative;
+  top: 10%;
+  left: -130%;
+  transform: translateY(-50%); /* Center text vertically */
+  transition: transform 0.5s ease-out;
+  z-index: -1;
+}
+/* Media queries for responsive font sizes */
+@media (max-width: 1440px) {
+  .heading {
+    font-size: 6rem;
+  }
+
+  .desc {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 5rem;
+  }
+
+  .desc {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 4rem;
+  }
+
+  .desc {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading {
+    font-size: 3rem;
+  }
+
+  .desc {
+    font-size: 0.9em;
+  }
+}
